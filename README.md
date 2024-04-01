@@ -17,3 +17,4 @@ To test the repro steps against other mariaDB versions, make sure to also do `do
 Additional Note:
 - If you hit the repro path, re-running the giant query command will always take over 1 minute, despite the attempt to reset cache state with `FLUSH TABLES`. It's possible that there are other ways to clean up DB states that I am not aware of.
 - These steps are known to repro on version 10.8.2. I have not seen it happen on 10.10 and 10.11.
+- Relevant ticket in MariaDB JIRA: https://jira.mariadb.org/browse/MDEV-28852
